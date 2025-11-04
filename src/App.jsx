@@ -18,6 +18,8 @@ const SurgeryRecovery = lazy(() => import("./pages/services/SurgeryRecovery"));
 const NutritionDiet = lazy(() => import("./pages/services/NutritionDiet"));
 const BehaviorTherapy = lazy(() => import("./pages/services/BehaviorTherapy"));
 const Testimonials = lazy(() => import("./pages/Testimonials"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Book = lazy(() => import("./pages/Book"));
 
 // Optional 404 Page
 const NotFound = () => (
@@ -71,6 +73,8 @@ const AnimatedRoutes = () => {
             <Route path="/services/nutrition" element={<NutritionDiet />} />
             <Route path="/services/behavior" element={<BehaviorTherapy />} />
             <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/book" element={<Book />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate to="/404" replace />} />
           </Routes>

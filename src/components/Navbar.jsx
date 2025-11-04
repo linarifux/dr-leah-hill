@@ -67,7 +67,6 @@ const Navbar = () => {
       ],
       icon: <FileText size={16} />,
     },
-    { name: "Book", href: "/book", icon: <BookOpen size={16} /> },
     { name: "Contact", href: "/contact", icon: <Phone size={16} /> },
   ];
 
@@ -156,7 +155,7 @@ const Navbar = () => {
 
           {/* Book Now Button */}
           <a
-            href="/appointments"
+            href="/book"
             className={`ml-4 px-4 py-2 rounded-full shadow-md transition ${
               scrolled || opacity > 0.5
                 ? "bg-teal-600 hover:bg-teal-700 text-white"
