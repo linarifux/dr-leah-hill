@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+button:focus {
+  outline: none;
+
+}
+
+button {
+  cursor: pointer;
+}
